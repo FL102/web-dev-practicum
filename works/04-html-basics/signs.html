@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дорожные знаки</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <style>
+        .tooltip {
+            position: relative;
+        }
+
+        .tooltip .ui-tooltip {
+            position: absolute;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 5px;
+            z-index: 1;
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+            margin: 4px;
+        }
+    </style>
+    <script>
+        $(function () {
+            $(document).tooltip({
+                items: "img",
+                content: function () {
+                    var $element = $(this);
+                    if ($element.is("img")) {
+                        return $element.data('hint');
+                    }
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>
+        <img src="img/signs/1_10.svg" alt="Знак 1.10" class="tooltip" data-hint="1.10 Выезд на набережную">
+        <img src="img/signs/1_15.svg" alt="Знак 1.15" class="tooltip" data-hint="1.15 Скользкая дорога">
+        <img src="img/signs/1_21.svg" alt="Знак 1.21" class="tooltip" data-hint="1.21 Двустороннее движение">
+        <img src="img/signs/1_27.svg" alt="Знак 1.27" class="tooltip" data-hint="1.27 Дикие животные">
+        <img src="img/signs/1_29.svg" alt="Знак 1.29" class="tooltip" data-hint="1.29 Боковой ветер">
+    </p>
+    <p>
+        <img src="img/signs/2_1.svg" alt="Знак 2.1" class="tooltip" data-hint="2.1 Главная дорога">
+        <img src="img/signs/2_3_1.svg" alt="Знак 2.3.1" class="tooltip" data-hint="2.3.1 Пересечение со второстепенной дорогой">
+        <img src="img/signs/2_5.svg" alt="Знак 2.5" class="tooltip" data-hint="2.5 Движение без остановки запрещено">
+        <img src="img/signs/2_6.svg" alt="Знак 2.6" class="tooltip" data-hint="2.6 Преимущество встречного движения">
+        <img src="img/signs/2_7.svg" alt="Знак 2.7" class="tooltip" data-hint="2.7 Преимущество перед встречным движением">
+    </p>
+    <p>
+        <img src="img/signs/3_4.svg" alt="Знак 3.4" class="tooltip" data-hint="3.4 Движение грузовых автомобилей запрещено">
+        <img src="img/signs/3_7.svg" alt="Знак 3.7" class="tooltip" data-hint="3.7 Движение с прицепом запрещено">
+        <img src="img/signs/3_10.svg" alt="Знак 3.10" class="tooltip" data-hint="3.10 Движение пешеходов запрещено">
+        <img src="img/signs/3_13.svg" alt="Знак 3.13" class="tooltip" data-hint="3.13 Ограничение высоты">
+        <img src="img/signs/3_19.svg" alt="Знак 3.19" class="tooltip" data-hint="3.19 Разворот запрещён">
+    </p>
+</body>
+</html>

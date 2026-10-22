@@ -1,0 +1,135 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: #264653 url("../img/todo-bg.svg") center / cover no-repeat;
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+}
+.container{
+    width: 40%;
+    top: 50%;
+    left: 50%;
+    background: #fffdf7;
+    border-radius: 16px;
+    min-width: 450px;
+    position: absolute;
+    min-height: 100px;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+}
+.container h1{
+    padding: 26px 20px 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: #264653;
+}
+#newtask{
+    position: relative;
+    display: flex;
+    gap: 10px;
+    padding: 18px 20px 24px;
+}
+#newtask input{
+    flex: 1;
+    height: 48px;
+    padding: 12px 14px;
+    color: #1d3557;
+    font-weight: 500;
+    position: relative;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 15px;
+    border: 2px solid #d8e2dc;
+    background: #ffffff;
+}
+
+#newtask input:focus{
+    outline: none;
+    border-color: #2a9d8f;
+}
+#newtask button{
+    position: relative;
+    display: grid;
+    place-items: center;
+    flex: 0 0 48px;
+    background-color: #2a9d8f;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    transition: background-color .2s;
+}
+#newtask button:hover,
+#newtask button:focus-visible{
+    background-color: #21867a;
+}
+#tasks{
+    border-radius: 0 0 16px 16px;
+    width: 100%;
+    position: relative;
+    background-color: #f4f1e8;
+    padding: 20px;
+}
+#tasks:empty{
+    display: none;
+}
+
+.task{
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    border-left: 5px solid #e9c46a;
+    cursor: pointer;
+    background-color: #ffffff;
+    min-height: 50px;
+    margin-bottom: 8px;
+    padding: 6px 6px 6px 14px;
+    display: flex;
+    gap: 12px;
+    box-shadow: 0 2px 6px rgba(38, 70, 83, 0.08);
+}
+.task:last-child{
+    margin-bottom: 0;
+}
+.task span{
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 400;
+    color: #264653;
+    word-break: break-word;
+}
+.task button{
+    display: grid;
+    place-items: center;
+    flex: 0 0 38px;
+    background-color: transparent;
+    color: #8d99ae;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    height: 38px;
+    width: 38px;
+    border-radius: 8px;
+    transition: background-color .2s, color .2s;
+}
+.task button:hover,
+.task button:focus-visible{
+    background-color: #fde8e2;
+    color: #e76f51;
+}
+
+@media (max-width: 520px){
+    .container{
+        width: calc(100% - 32px);
+        min-width: 0;
+    }
+}

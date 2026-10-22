@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMax slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#14213d"/>
+      <stop offset="0.55" stop-color="#3a3f73"/>
+      <stop offset="0.85" stop-color="#c8677a"/>
+      <stop offset="1" stop-color="#f4a261"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1d2a3f"/>
+      <stop offset="1" stop-color="#0b1220"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a4e69"/>
+      <stop offset="1" stop-color="#22223b"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffd6a5"/>
+      <stop offset="1" stop-color="#ffd6a5" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+  <g fill="#fff" opacity="0.7">
+    <circle cx="120" cy="90" r="1.6"/><circle cx="340" cy="160" r="1.2"/><circle cx="510" cy="60" r="1.4"/>
+    <circle cx="760" cy="120" r="1"/><circle cx="980" cy="70" r="1.6"/><circle cx="1180" cy="150" r="1.2"/>
+    <circle cx="1390" cy="80" r="1.5"/><circle cx="1520" cy="200" r="1"/><circle cx="240" cy="260" r="1"/>
+    <circle cx="1300" cy="270" r="1.1"/><circle cx="640" cy="230" r="0.9"/><circle cx="880" cy="250" r="1.2"/>
+  </g>
+  <circle cx="800" cy="640" r="260" fill="url(#sun)"/>
+  <path d="M0 640 C 220 560 380 600 560 610 S 900 560 1050 600 S 1400 560 1600 620 V1000 H0Z" fill="#2b2d52" opacity="0.8"/>
+  <path d="M0 680 C 260 620 460 660 700 650 S 1200 630 1600 680 V1000 H0Z" fill="url(#ground)"/>
+  <path d="M770 650 L830 650 L1250 1000 L350 1000 Z" fill="url(#road)"/>
+  <g fill="#f4d35e">
+    <path d="M797 665 L803 665 L805 690 L795 690Z"/>
+    <path d="M794 715 L806 715 L809 760 L791 760Z"/>
+    <path d="M789 805 L811 805 L816 880 L784 880Z"/>
+    <path d="M782 935 L818 935 L823 1000 L777 1000Z"/>
+  </g>
+  <g transform="translate(800 642)">
+    <rect x="-46" y="-14" width="92" height="12" fill="#fff"/>
+    <g fill="#e63946">
+      <rect x="-40" y="-14" width="12" height="12"/>
+      <rect x="-16" y="-14" width="12" height="12"/>
+      <rect x="8" y="-14" width="12" height="12"/>
+      <rect x="32" y="-14" width="8" height="12"/>
+    </g>
+    <rect x="-44" y="-2" width="3" height="10" fill="#ddd"/>
+    <rect x="41" y="-2" width="3" height="10" fill="#ddd"/>
+  </g>
+</svg>
