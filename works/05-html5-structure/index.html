@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Анастасия Ковалева — digital-специалист | Портфолио</title>
+  <meta name="description" content="Персональная страница специалиста: услуги, портфолио, опыт и форма обратной связи.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Page header: logo, main navigation, call to action -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="#top" aria-label="На главную">
+        <svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true">
+          <path d="M20 3 35 11.5v17L20 37 5 28.5v-17Z" fill="#1565e8"/>
+          <path d="M20 12 28 16.5v9L20 30l-8-4.5v-9Z" fill="#fff"/>
+          <path d="M20 12 28 16.5 20 21l-8-4.5Z" fill="#9cc2ff"/>
+        </svg>
+        <span class="logo__text">
+          <span class="logo__name">KOVALEVA<b>.MEDIA</b></span>
+          <span class="logo__slogan">Данные. Контент. Результат.</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Основное меню">
+        <ul>
+          <li><a href="#top" aria-current="page">Главная</a></li>
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#portfolio">Портфолио</a></li>
+          <li><a href="#experience">Опыт</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn--primary" href="#feedback">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m3 11 18-8-8 18-2-8z"/></svg>
+        Связаться
+      </a>
+    </div>
+  </header>
+
+  <div class="container layout" id="top">
+
+    <main class="content">
+
+      <!-- Hero: short profile of the specialist -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__text">
+          <p class="hero__hello">Привет! Я</p>
+          <h1 id="hero-title">Анастасия Ковалева</h1>
+          <p class="hero__role">Digital-специалист</p>
+          <p class="hero__lead">Помогаю небольшим проектам расти в&nbsp;интернете: настраиваю аналитику, веду соцсети и&nbsp;собираю лендинги, которые понятно объясняют продукт.</p>
+          <p class="hero__actions">
+            <a class="btn btn--primary" href="#feedback">Связаться со мной <span aria-hidden="true">→</span></a>
+            <a class="btn btn--outline" href="#portfolio">Смотреть портфолио</a>
+          </p>
+          <ul class="tags" aria-label="Направления работы">
+            <li>Веб-аналитика</li>
+            <li>SMM</li>
+            <li>Лендинги</li>
+            <li>Контент</li>
+          </ul>
+        </div>
+        <figure class="hero__photo">
+          <img src="images/portrait.jpg" alt="Анастасия Ковалева, портрет на фоне синей стены" width="700" height="1050">
+          <figcaption class="hero__note">Хороший контент начинается с&nbsp;цифр!</figcaption>
+        </figure>
+      </section>
+
+      <!-- About -->
+      <section class="card about" id="about" aria-labelledby="about-title">
+        <div class="about__text">
+          <h2 class="section-title section-title--user" id="about-title">Обо мне</h2>
+          <p>Меня зовут Анастасия, я студентка 3&nbsp;курса направления «Информационные системы и&nbsp;технологии» (ПГТУ, Йошкар-Ола). Специализируюсь на&nbsp;цифровых медиа и&nbsp;рекламе: днём разбираю метрики и&nbsp;вёрстку, вечером пишу тексты и&nbsp;снимаю короткие видео. В&nbsp;работе сочетаю аналитику, аккуратность и&nbsp;внимание к&nbsp;деталям.</p>
+          <a class="link-btn" href="#experience">Узнать больше <span aria-hidden="true">→</span></a>
+        </div>
+        <figure class="about__photo">
+          <img src="images/workplace.jpg" alt="Рабочее место: ноутбук, чашка кофе и блокнот" width="900" height="600">
+          <figcaption>«Цифры подсказывают, что&nbsp;сказать людям»</figcaption>
+        </figure>
+      </section>
+
+      <!-- Services -->
+      <section class="card services" id="services" aria-labelledby="services-title">
+        <h2 class="section-title section-title--tools" id="services-title">Услуги</h2>
+        <div class="services__grid">
+          <article class="service">
+            <span class="service__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+            </span>
+            <h3>Веб-аналитика</h3>
+            <p>Настройка Яндекс Метрики, целей и&nbsp;отчётов, поиск мест, где пользователи уходят со&nbsp;страницы.</p>
+            <a href="#portfolio">Подробнее <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="service">
+            <span class="service__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg>
+            </span>
+            <h3>SMM и&nbsp;контент</h3>
+            <p>Контент-план, тексты, короткие видео на&nbsp;телефон и&nbsp;отчёт по&nbsp;охватам каждый месяц.</p>
+            <a href="#portfolio">Подробнее <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="service">
+            <span class="service__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 9h20M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg>
+            </span>
+            <h3>Лендинги и&nbsp;вёрстка</h3>
+            <p>Одностраничные сайты на&nbsp;HTML и&nbsp;CSS с&nbsp;понятной структурой и&nbsp;формой заявки.</p>
+            <a href="#portfolio">Подробнее <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Portfolio -->
+      <section class="card portfolio" id="portfolio" aria-labelledby="portfolio-title">
+        <div class="section-head">
+          <h2 class="section-title section-title--folder" id="portfolio-title">Портфолио</h2>
+          <a class="more-link" href="#portfolio">Все работы <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="portfolio__grid">
+          <article class="project">
+            <figure>
+              <img src="images/project-analytics.jpg" alt="Ноутбук с дашбордом веб-аналитики" width="800" height="570">
+              <figcaption>
+                <h3>Аналитика карточки товара</h3>
+                <p>Тепловые карты и воронка для курсовой работы</p>
+              </figcaption>
+            </figure>
+            <a class="project__go" href="#portfolio" aria-label="Открыть проект «Аналитика карточки товара»">→</a>
+          </article>
+          <article class="project">
+            <figure>
+              <img src="images/project-landing.jpg" alt="Ноутбук с открытым кодом лендинга" width="800" height="533">
+              <figcaption>
+                <h3>Лендинг онлайн-курса</h3>
+                <p>Вёрстка на HTML5 и CSS3</p>
+              </figcaption>
+            </figure>
+            <a class="project__go" href="#portfolio" aria-label="Открыть проект «Лендинг онлайн-курса»">→</a>
+          </article>
+          <article class="project">
+            <figure>
+              <img src="images/project-smm.jpg" alt="Зал на концерте в жёлтом свете прожекторов" width="800" height="533">
+              <figcaption>
+                <h3>Контент для концертов</h3>
+                <p>Рубрика коротких видео для площадки</p>
+              </figcaption>
+            </figure>
+            <a class="project__go" href="#portfolio" aria-label="Открыть проект «Контент для концертов»">→</a>
+          </article>
+        </div>
+      </section>
+
+      <div class="duo">
+        <!-- Experience and education -->
+        <section class="card experience" id="experience" aria-labelledby="experience-title">
+          <h2 class="section-title section-title--cap" id="experience-title">Опыт и образование</h2>
+          <ol class="timeline">
+            <li>
+              <p class="timeline__date"><time datetime="2026-02">2026</time> – н.&nbsp;в.</p>
+              <div>
+                <h3>SMM-специалист, кофейня «Зерно»</h3>
+                <p>Рубрика коротких видео, сценарии, съёмка и&nbsp;отчёты по&nbsp;охватам</p>
+              </div>
+            </li>
+            <li>
+              <p class="timeline__date"><time datetime="2025">2025</time></p>
+              <div>
+                <h3>Учебный проект по веб-аналитике</h3>
+                <p>Исследование конверсии карточки товара, защита с&nbsp;оценкой «отлично»</p>
+              </div>
+            </li>
+            <li>
+              <p class="timeline__date"><time datetime="2023">2023</time> – <time datetime="2027">2027</time></p>
+              <div>
+                <h3>Бакалавриат, ИСТ</h3>
+                <p>Поволжский государственный технологический университет</p>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <!-- Reviews -->
+        <section class="card reviews" id="reviews" aria-labelledby="reviews-title">
+          <div class="section-head">
+            <h2 class="section-title section-title--chat" id="reviews-title">Отзывы</h2>
+            <a class="more-link" href="#reviews">Все отзывы <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="reviews__grid">
+            <article class="review">
+              <header class="review__head">
+                <span class="avatar" aria-hidden="true">ИС</span>
+                <div>
+                  <h3>Ирина Сергеева</h3>
+                  <p>Владелица кофейни</p>
+                </div>
+              </header>
+              <p class="stars"><span aria-hidden="true">★★★★★</span><span class="visually-hidden">Оценка 5 из 5</span></p>
+              <blockquote>
+                <p>Видео для нашей страницы стали выходить по&nbsp;расписанию, а&nbsp;охваты выросли. Всё объясняет простыми словами.</p>
+              </blockquote>
+            </article>
+            <article class="review">
+              <header class="review__head">
+                <span class="avatar avatar--alt" aria-hidden="true">ДК</span>
+                <div>
+                  <h3>Дмитрий Козлов</h3>
+                  <p>Руководитель проекта</p>
+                </div>
+              </header>
+              <p class="stars"><span aria-hidden="true">★★★★★</span><span class="visually-hidden">Оценка 5 из 5</span></p>
+              <blockquote>
+                <p>Аккуратно собрала данные и&nbsp;сделала выводы, с&nbsp;которыми можно работать. Рекомендую для&nbsp;аналитических задач.</p>
+              </blockquote>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Sidebar: skills, contacts, availability, feedback form -->
+    <aside class="sidebar" aria-label="Дополнительная информация">
+
+      <section class="card skills" aria-labelledby="skills-title">
+        <h2 class="side-title" id="skills-title">Мои навыки</h2>
+        <ul class="skills__list">
+          <li><span class="skills__name">Веб-аналитика</span><span class="skills__value">90%</span><span class="bar"><span style="width: 90%"></span></span></li>
+          <li><span class="skills__name">SMM и контент</span><span class="skills__value">85%</span><span class="bar"><span style="width: 85%"></span></span></li>
+          <li><span class="skills__name">HTML &amp; CSS</span><span class="skills__value">80%</span><span class="bar"><span style="width: 80%"></span></span></li>
+          <li><span class="skills__name">Figma</span><span class="skills__value">70%</span><span class="bar"><span style="width: 70%"></span></span></li>
+          <li><span class="skills__name">Коммуникация</span><span class="skills__value">95%</span><span class="bar"><span style="width: 95%"></span></span></li>
+        </ul>
+      </section>
+
+      <section class="card contacts" id="contacts" aria-labelledby="contacts-title">
+        <h2 class="side-title side-title--phone" id="contacts-title">Контакты</h2>
+        <address>
+          <ul class="contacts__list">
+            <li class="contacts__item contacts__item--geo">Йошкар-Ола, Россия</li>
+            <li class="contacts__item contacts__item--phone"><a href="tel:+78362000000">+7 (8362) 00-00-00</a></li>
+            <li class="contacts__item contacts__item--mail"><a href="mailto:a.kovaleva.ist@example.ru">a.kovaleva.ist@example.ru</a></li>
+            <li class="contacts__item contacts__item--tg"><a href="https://t.me/" target="_blank" rel="noopener">t.me/kovaleva_media</a></li>
+          </ul>
+        </address>
+        <ul class="socials" aria-label="Социальные сети">
+          <li><a href="https://vk.com/" target="_blank" rel="noopener" aria-label="ВКонтакте">VK</a></li>
+          <li><a href="https://t.me/" target="_blank" rel="noopener" aria-label="Telegram">Tg</a></li>
+          <li><a href="https://www.behance.net/" target="_blank" rel="noopener" aria-label="Behance">Bē</a></li>
+          <li><a href="https://dribbble.com/" target="_blank" rel="noopener" aria-label="Dribbble">Dr</a></li>
+        </ul>
+      </section>
+
+      <section class="card status" aria-labelledby="status-title">
+        <h2 class="side-title side-title--status" id="status-title">Открыта к проектам</h2>
+        <p>Беру небольшие задачи и&nbsp;стажировки. Расскажите о&nbsp;своей идее, обсудим!</p>
+      </section>
+
+      <section class="card feedback" id="feedback" aria-labelledby="feedback-title">
+        <h2 class="side-title" id="feedback-title">Напишите мне</h2>
+        <form class="form" action="mailto:a.kovaleva.ist@example.ru" method="post" enctype="text/plain">
+          <label class="visually-hidden" for="f-name">Ваше имя</label>
+          <input id="f-name" name="name" type="text" placeholder="Ваше имя" required>
+          <label class="visually-hidden" for="f-email">Ваш email</label>
+          <input id="f-email" name="email" type="email" placeholder="Ваш email" required>
+          <label class="visually-hidden" for="f-message">Сообщение</label>
+          <textarea id="f-message" name="message" rows="4" placeholder="Сообщение" required></textarea>
+          <button class="btn btn--primary btn--wide" type="submit">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m3 11 18-8-8 18-2-8z"/></svg>
+            Отправить
+          </button>
+        </form>
+        <p class="form__note">Отвечаю в течение 24 часов</p>
+      </section>
+    </aside>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <span class="logo__name">KOVALEVA<b>.MEDIA</b></span>
+        <small>© <time datetime="2026">2026</time> Анастасия Ковалева. Учебный проект, практическая работа № 5.</small>
+      </div>
+      <nav class="footer-nav" aria-label="Меню в подвале">
+        <ul>
+          <li><a href="#top">Главная</a></li>
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#portfolio">Портфолио</a></li>
+          <li><a href="#experience">Опыт</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+      <ul class="socials socials--small" aria-label="Социальные сети">
+        <li><a href="https://vk.com/" target="_blank" rel="noopener" aria-label="ВКонтакте">VK</a></li>
+        <li><a href="https://t.me/" target="_blank" rel="noopener" aria-label="Telegram">Tg</a></li>
+        <li><a href="https://www.behance.net/" target="_blank" rel="noopener" aria-label="Behance">Bē</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
