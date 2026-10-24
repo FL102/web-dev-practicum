@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CineFlow — фильмы и сериалы онлайн</title>
+  <meta name="description" content="Учебная страница стримингового сервиса: главный баннер, продолжение просмотра, популярное и рекомендации.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header: logo, main menu, search, notifications, profile -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="#top" aria-label="CineFlow, на главную">
+        <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M7 3.5c0-1.6 1.7-2.6 3.1-1.8l19 11.2c1.3.8 1.3 2.7 0 3.5l-19 11.2C8.7 28.4 7 27.4 7 25.8z"/>
+          <path class="logo__cut" d="M13 10.5v11l9-5.5z"/>
+        </svg>
+        <span class="logo__text">CineFlow</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Основное меню">
+        <ul>
+          <li><a href="#top" aria-current="page">Главная</a></li>
+          <li><a href="#popular">Фильмы</a></li>
+          <li><a href="#recommended">Сериалы</a></li>
+          <li><a href="#continue">Мой список</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" type="button" aria-label="Поиск">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        </button>
+        <button class="icon-btn icon-btn--notify" type="button" aria-label="Уведомления: есть новые">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.9 1.9 0 0 0 3.4 0"/></svg>
+        </button>
+        <a class="avatar" href="#top" aria-label="Профиль Анастасии">АК</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- Hero banner -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__eyebrow">Новые горизонты</p>
+          <h1 class="hero__title" id="hero-title">В поисках большего</h1>
+          <p class="hero__text">Захватывающее путешествие к бирюзовым озёрам Доломитовых Альп. Иногда, чтобы найти себя, нужно просто отправиться в путь.</p>
+          <p class="hero__meta"><span class="rating">8,7</span> 2026 · Приключения · 1 ч 52 мин · 12+</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#continue">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12-7.5z"/></svg>
+              Смотреть
+            </a>
+            <a class="btn btn--ghost" href="#popular">Подробнее</a>
+          </div>
+        </div>
+        <p class="hero__note">Истории, которые вдохновляют</p>
+        <ol class="hero__dots" aria-label="Слайды баннера">
+          <li class="is-active"><span class="visually-hidden">Слайд 1, текущий</span></li>
+          <li><span class="visually-hidden">Слайд 2</span></li>
+          <li><span class="visually-hidden">Слайд 3</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <div class="container">
+
+      <!-- Continue watching: progress of each title -->
+      <section class="rail" id="continue" aria-labelledby="continue-title">
+        <div class="rail__head">
+          <h2 id="continue-title">Продолжить просмотр</h2>
+          <a class="see-all" href="#continue">Смотреть все</a>
+        </div>
+        <ul class="rail__grid rail__grid--4">
+          <li>
+            <article class="card card--wide">
+              <a class="card__link" href="#continue" aria-label="Продолжить «Озёра Доломит», осталось 12 минут">
+                <figure class="card__image">
+                  <img src="images/cw-dolomites.jpg" alt="Деревянная лодка на горном озере среди скал" width="640" height="360">
+                  <span class="card__play" aria-hidden="true"></span>
+                </figure>
+                <div class="progress" style="--progress: 72%" role="img" aria-label="Просмотрено 72%"></div>
+                <h3 class="card__title">Озёра Доломит</h3>
+                <p class="card__meta">Сезон 1, серия 3</p>
+                <p class="card__meta">Осталось 12 мин</p>
+              </a>
+            </article>
+          </li>
+          <li>
+            <article class="card card--wide">
+              <a class="card__link" href="#continue" aria-label="Продолжить «Дорога на запад», осталось 28 минут">
+                <figure class="card__image">
+                  <img src="images/cw-road.jpg" alt="Жёлтый фургон едет по дороге среди красных скал" width="640" height="360">
+                  <span class="card__play" aria-hidden="true"></span>
+                </figure>
+                <div class="progress" style="--progress: 38%" role="img" aria-label="Просмотрено 38%"></div>
+                <h3 class="card__title">Дорога на запад</h3>
+                <p class="card__meta">Сезон 2, серия 1</p>
+                <p class="card__meta">Осталось 28 мин</p>
+              </a>
+            </article>
+          </li>
+          <li>
+            <article class="card card--wide">
+              <a class="card__link" href="#continue" aria-label="Продолжить «Огни Парижа», осталось 45 минут">
+                <figure class="card__image">
+                  <img src="images/cw-paris.jpg" alt="Эйфелева башня на закате над Сеной" width="640" height="360">
+                  <span class="card__play" aria-hidden="true"></span>
+                </figure>
+                <div class="progress" style="--progress: 55%" role="img" aria-label="Просмотрено 55%"></div>
+                <h3 class="card__title">Огни Парижа</h3>
+                <p class="card__meta">Фильм · 2025</p>
+                <p class="card__meta">Осталось 45 мин</p>
+              </a>
+            </article>
+          </li>
+          <li>
+            <article class="card card--wide">
+              <a class="card__link" href="#continue" aria-label="Продолжить «Берег рассвета», осталось 18 минут">
+                <figure class="card__image">
+                  <img src="images/cw-shore.jpg" alt="Морской берег и волны на рассвете" width="640" height="360">
+                  <span class="card__play" aria-hidden="true"></span>
+                </figure>
+                <div class="progress" style="--progress: 86%" role="img" aria-label="Просмотрено 86%"></div>
+                <h3 class="card__title">Берег рассвета</h3>
+                <p class="card__meta">Сезон 1, серия 5</p>
+                <p class="card__meta">Осталось 18 мин</p>
+              </a>
+            </article>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Popular now: posters -->
+      <section class="rail" id="popular" aria-labelledby="popular-title">
+        <div class="rail__head">
+          <h2 id="popular-title">Популярное сейчас</h2>
+          <a class="see-all" href="#popular">Смотреть все</a>
+        </div>
+        <ol class="rail__grid rail__grid--5">
+          <li>
+            <article class="card card--poster" data-rank="1">
+              <a class="card__link" href="#popular">
+                <figure class="card__image">
+                  <img src="images/pop-concert.jpg" alt="Зрители у сцены в лучах прожекторов" width="480" height="640">
+                </figure>
+                <h3 class="card__title">Последний концерт</h3>
+                <p class="card__meta">Музыкальный</p>
+              </a>
+            </article>
+          </li>
+          <li>
+            <article class="card card--poster" data-rank="2">
+              <a class="card__link" href="#popular">
+                <figure class="card__image">
+                  <img src="images/pop-player.jpg" alt="Игрок перед мониторами в тёмной комнате" width="480" height="640">
+                </figure>
+                <h3 class="card__title">Игрок</h3>
+                <p class="card__meta">Триллер</p>
+              </a>
+            </article>
+          </li>
+          <li>
+            <article class="card card--poster" data-rank="3">
+              <a class="card__link" href="#popular">
+                <figure class="card__image">
+                  <img src="images/pop-8bit.jpg" alt="Ретро-компьютеры и игровые приставки в неоновом свете" width="480" height="640">
+                </figure>
+                <h3 class="card__title">8 бит</h3>
+                <p class="card__meta">Комедия</p>
+              </a>
+            </article>
+          </li>
+          <li>
+            <article class="card card--poster" data-rank="4">
+              <a class="card__link" href="#popular">
+                <figure class="card__image">
+                  <img src="images/pop-festival.jpg" alt="Толпа на фестивале под разноцветными огнями" width="480" height="640">
+                </figure>
+                <h3 class="card__title">Ночь фестиваля</h3>
+                <p class="card__meta">Драма</p>
+              </a>
+            </article>
+          </li>
+          <li>
+            <article class="card card--poster" data-rank="5">
+              <a class="card__link" href="#popular">
+                <figure class="card__image">
+                  <img src="images/pop-canyon.jpg" alt="Пустая дорога уходит в каньон между скал" width="480" height="640">
+                </figure>
+                <h3 class="card__title">Каньон</h3>
+                <p class="card__meta">Приключения</p>
+              </a>
+            </article>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Recommendations with "add to favourites" buttons -->
+      <section class="rail" id="recommended" aria-labelledby="recommended-title">
+        <div class="rail__head">
+          <h2 id="recommended-title">Рекомендации для вас</h2>
+          <a class="see-all" href="#recommended">Смотреть все</a>
+        </div>
+        <ul class="rail__grid rail__grid--5">
+          <li>
+            <article class="card card--rec">
+              <figure class="card__image">
+                <img src="images/rec-strings.jpg" alt="Гитары у окна в домашней студии" width="560" height="360">
+              </figure>
+              <button class="fav" type="button" aria-label="Добавить «Струны» в избранное"></button>
+              <h3 class="card__title"><a href="#recommended">Струны</a></h3>
+              <p class="card__meta">Мелодрама</p>
+            </article>
+          </li>
+          <li>
+            <article class="card card--rec">
+              <figure class="card__image">
+                <img src="images/rec-code.jpg" alt="Клавиатура с разноцветной подсветкой" width="560" height="360">
+              </figure>
+              <button class="fav" type="button" aria-label="Добавить «Код будущего» в избранное"></button>
+              <h3 class="card__title"><a href="#recommended">Код будущего</a></h3>
+              <p class="card__meta">Фантастика</p>
+            </article>
+          </li>
+          <li>
+            <article class="card card--rec">
+              <figure class="card__image">
+                <img src="images/rec-startup.jpg" alt="Ноутбук с кодом на рабочем столе" width="560" height="360">
+              </figure>
+              <button class="fav" type="button" aria-label="Добавить «Стартап» в избранное"></button>
+              <h3 class="card__title"><a href="#recommended">Стартап</a></h3>
+              <p class="card__meta">Драма</p>
+            </article>
+          </li>
+          <li>
+            <article class="card card--rec">
+              <figure class="card__image">
+                <img src="images/rec-numbers.jpg" alt="Ноутбук с графиками аналитики" width="560" height="360">
+              </figure>
+              <button class="fav" type="button" aria-label="Добавить «Цифры решают» в избранное"></button>
+              <h3 class="card__title"><a href="#recommended">Цифры решают</a></h3>
+              <p class="card__meta">Документальный</p>
+            </article>
+          </li>
+          <li>
+            <article class="card card--rec">
+              <figure class="card__image">
+                <img src="images/rec-reboot.jpg" alt="Белая игровая приставка с геймпадом" width="560" height="360">
+              </figure>
+              <button class="fav" type="button" aria-label="Добавить «Перезагрузка» в избранное"></button>
+              <h3 class="card__title"><a href="#recommended">Перезагрузка</a></h3>
+              <p class="card__meta">Комедия</p>
+            </article>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Service features -->
+      <section class="features" aria-label="Преимущества сервиса">
+        <ul>
+          <li class="feature">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16l-1.5 12h-13z"/><path d="M8 8 7 3M16 8l1-5M12 8V3"/></svg>
+            <span>Тысячи фильмов и&nbsp;сериалов</span>
+          </li>
+          <li class="feature">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="15" height="11" rx="1.5"/><path d="M6 19h7"/><rect x="17" y="9" width="5" height="11" rx="1"/></svg>
+            <span>На любых устройствах</span>
+          </li>
+          <li class="feature">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg>
+            <span>Персональные рекомендации</span>
+          </li>
+          <li class="feature">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"/></svg>
+            <span>Скачивай и&nbsp;смотри офлайн</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Subscription call to action -->
+      <section class="cta" aria-labelledby="cta-title">
+        <div>
+          <h2 id="cta-title">Кино, которое всегда с тобой</h2>
+          <p>Смотри где удобно. Отменяй когда хочешь. Первые 14 дней бесплатно.</p>
+        </div>
+        <a class="btn btn--primary btn--arrow" href="#top">Оформить подписку</a>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__top">
+      <a class="logo logo--small" href="#top" aria-label="CineFlow, наверх">
+        <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M7 3.5c0-1.6 1.7-2.6 3.1-1.8l19 11.2c1.3.8 1.3 2.7 0 3.5l-19 11.2C8.7 28.4 7 27.4 7 25.8z"/>
+          <path class="logo__cut" d="M13 10.5v11l9-5.5z"/>
+        </svg>
+        <span class="logo__text">CineFlow</span>
+      </a>
+      <nav class="footer-nav" aria-label="Меню в подвале">
+        <ul>
+          <li><a href="#top">Главная</a></li>
+          <li><a href="#popular">Фильмы</a></li>
+          <li><a href="#recommended">Сериалы</a></li>
+          <li><a href="#top">Поддержка</a></li>
+        </ul>
+      </nav>
+      <ul class="socials" aria-label="CineFlow в соцсетях">
+        <li><a href="https://vk.com/" target="_blank" rel="noopener" aria-label="ВКонтакте">VK</a></li>
+        <li><a href="https://t.me/" target="_blank" rel="noopener" aria-label="Telegram">Tg</a></li>
+        <li><a href="https://rutube.ru/" target="_blank" rel="noopener" aria-label="Rutube">Rt</a></li>
+      </ul>
+    </div>
+    <div class="container site-footer__bottom">
+      <small>© <time datetime="2026">2026</time> CineFlow. Учебный проект, практическая работа № 6. Ковалева А.А.</small>
+      <p class="site-footer__motto">Больше, чем просто фильмы</p>
+    </div>
+  </footer>
+
+</body>
+</html>
